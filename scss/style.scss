@@ -339,6 +339,26 @@ body {
 
     }
 
+    .footer-bot {
+        background: #0D2436;
+
+        .chiziq {
+            border: 1px solid gray;
+        }
+        .email-text {
+            padding: 20px 0 20px 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 200;
+            line-height: 16.71px;
+            text-align: left;
+
+        }
+
+    }
 
     
 }
