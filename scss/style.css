@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -47,6 +50,7 @@ body .header-bot-box .header-bot-1 .botA {
   align-items: center;
   gap: 32px;
   justify-content: center;
+  transition: all 0.3s linear;
 }
 body .header-bot-box .header-bot-1 .botA a {
   color: inherit;
@@ -189,6 +193,92 @@ body .pro-box .pro-text p {
   color: #454F5B;
   margin: 10px 0;
 }
+body .integer {
+  background: #F2F8FF;
+  margin-top: 80px;
+}
+body .integer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .integer-box h1 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  text-align: left;
+  margin: 64px 0 24px 0;
+}
+body .integer-box p {
+  max-width: 518px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+body .integer-box .integer-btn {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 24px 0 56px 0;
+}
+body .integer-box .integer-btn button {
+  width: 240px;
+  height: 50px;
+  background: rgba(22, 28, 36, 0.0392156863);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  padding: 5px 0 0 20px;
+}
+body .integer-box .integer-btn button:hover {
+  background: rgb(63, 63, 224);
+  color: white;
+  transition: 0.4s linear;
+}
+body footer {
+  background: #0D2436;
+}
+body footer .footer-box {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  color: white;
+  padding: 64px 0 50px 0;
+  flex-wrap: wrap;
+}
+body .footer-img .footer-img-child {
+  margin-top: 140px;
+}
+body .footer-text h3 {
+  margin-bottom: 24px;
+}
+body .footer-text p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+}
+body .footer-text pre {
+  line-height: 30px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+}
+body .footer-text h5 {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+}
 
 @media (max-width: 1234px) {
   .censor-box {
@@ -225,6 +315,7 @@ body .pro-box .pro-text p {
     display: flex;
     flex-direction: column;
     position: absolute;
+    background-color: rgb(225, 230, 238);
     top: 0px;
     left: -1240;
     right: 0;
@@ -233,6 +324,9 @@ body .pro-box .pro-text p {
     transform: translateX(0%);
     transform-origin: left;
     height: 400px;
+  }
+  .botA select {
+    background: transparent;
   }
 }
 @media (max-width: 700px) {
